@@ -1,0 +1,128 @@
+.app-wrapper {
+  position: absolute;
+  width: 100%; //calc(768px + 16px * 2);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .ct_app {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    min-height: calc(100% - 70px);
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+
+    .app_page {
+      width: calc(100% - 50px);
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding: 25px 36px 0px 31px;
+      margin-left: 50px;
+    }
+  }
+}
+
+#toast-container {
+  .toast-error {
+    background-color: #B42A47;
+  }
+
+  .toast-close-button {
+    color: rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0px 0 #ffffff;
+  }
+
+  & > div {
+    -moz-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.31) !important;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.31) !important;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.31) !important;
+    padding: 15px 15px 15px 55px !important;
+    border-radius: 10px;
+    width: 400px;
+    opacity: 0.9;
+
+    .toast-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+
+    .toast-message {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      color: #fff;
+    }
+  }
+}
+
+.toast-top-right {
+  top: 70px;
+  right: 30px;
+}
+
+@media all and (max-width: 1440px) {
+  #toast-container {
+
+    & > div {
+      width: 350px;
+
+      .toast-title {
+        font-size: 16px;
+      }
+
+      .toast-message {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 500px) {
+  .app-wrapper {
+
+    .ct_app {
+      top: 55px;
+
+      .app_page {
+        width: 100%;
+        padding: 0px 3vw;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  #toast-container {
+
+    & > div {
+      width: 90vw;
+
+      .toast-title {
+        font-size: 4.7vw;
+      }
+
+      .toast-message {
+        font-size: 3.5vw;
+      }
+    }
+  }
+
+  .toast-top-right {
+    top: 50px;
+    right: 5vw;
+    left: 5vw;
+  }
+}

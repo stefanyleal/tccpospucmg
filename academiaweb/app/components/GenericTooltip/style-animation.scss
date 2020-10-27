@@ -1,0 +1,414 @@
+.rc-tooltip.rc-tooltip-zoom-enter,
+.rc-tooltip.rc-tooltip-zoom-leave {
+    display: block;
+}
+
+.rc-tooltip-zoom-enter,
+.rc-tooltip-zoom-appear {
+    opacity: 0;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.rc-tooltip-zoom-leave {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+// Placement Top
+
+.rc-tooltip-zoom-enter.rc-tooltip-zoom-enter-active.rc-tooltip-placement-top,
+.rc-tooltip-zoom-appear.rc-tooltip-zoom-appear-active.rc-tooltip-placement-top {
+    -webkit-animation-name: slide-up-enter;
+    animation-name: slide-up-enter;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-leave.rc-tooltip-zoom-leave-active.rc-tooltip-placement-top {
+    -webkit-animation-name: slide-up-leave;
+    animation-name: slide-up-leave;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+// Placement Right
+
+.rc-tooltip-zoom-enter.rc-tooltip-zoom-enter-active.rc-tooltip-placement-right,
+.rc-tooltip-zoom-appear.rc-tooltip-zoom-appear-active.rc-tooltip-placement-right {
+    -webkit-animation-name: slide-right-enter;
+    animation-name: slide-right-enter;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-leave.rc-tooltip-zoom-leave-active.rc-tooltip-placement-right {
+    -webkit-animation-name: slide-right-leave;
+    animation-name: slide-right-leave;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+// Placement Bottom
+
+.rc-tooltip-zoom-enter.rc-tooltip-zoom-enter-active.rc-tooltip-placement-bottom,
+.rc-tooltip-zoom-appear.rc-tooltip-zoom-appear-active.rc-tooltip-placement-bottom {
+    -webkit-animation-name: slide-down-enter;
+    animation-name: slide-down-enter;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-leave.rc-tooltip-zoom-leave-active.rc-tooltip-placement-bottom {
+    -webkit-animation-name: slide-down-leave;
+    animation-name: slide-down-leave;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-enter.rc-tooltip-zoom-enter-active.rc-tooltip-placement-bottomLeft,
+.rc-tooltip-zoom-appear.rc-tooltip-zoom-appear-active.rc-tooltip-placement-bottomLeft {
+    -webkit-animation-name: slide-down-enter;
+    animation-name: slide-down-enter;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-leave.rc-tooltip-zoom-leave-active.rc-tooltip-placement-bottomLeft {
+    -webkit-animation-name: slide-down-leave;
+    animation-name: slide-down-leave;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-enter.rc-tooltip-zoom-enter-active.rc-tooltip-placement-bottomRight,
+.rc-tooltip-zoom-appear.rc-tooltip-zoom-appear-active.rc-tooltip-placement-bottomRight {
+    -webkit-animation-name: slide-down-enter;
+    animation-name: slide-down-enter;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-leave.rc-tooltip-zoom-leave-active.rc-tooltip-placement-bottomRight {
+    -webkit-animation-name: slide-down-leave;
+    animation-name: slide-down-leave;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+// Placement Left
+
+.rc-tooltip-zoom-enter.rc-tooltip-zoom-enter-active.rc-tooltip-placement-left,
+.rc-tooltip-zoom-appear.rc-tooltip-zoom-appear-active.rc-tooltip-placement-left {
+    -webkit-animation-name: slide-left-enter;
+    animation-name: slide-left-enter;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.rc-tooltip-zoom-leave.rc-tooltip-zoom-leave-active.rc-tooltip-placement-left {
+    -webkit-animation-name: slide-left-leave;
+    animation-name: slide-left-leave;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+//
+// Placement Top Animations
+//
+
+@-webkit-keyframes slide-up-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide-up-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes slide-up-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+}
+
+@keyframes slide-up-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+}
+
+//
+// Placement Right Animations
+//
+
+@-webkit-keyframes slide-right-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(-15px, 0);
+        transform: translate(-15px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide-right-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(-15px, 0);
+        transform: translate(-15px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes slide-right-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(-15px, 0);
+        transform: translate(-15px, 0);
+    }
+}
+
+@keyframes slide-right-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(-15px, 0);
+        transform: translate(-15px, 0);
+    }
+}
+
+//
+// Placement Bottom Animations
+//
+
+@-webkit-keyframes slide-down-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, -15px);
+        transform: translate(0, -15px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide-down-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, -15px);
+        transform: translate(0, -15px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes slide-down-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, -15px);
+        transform: translate(0, -15px);
+    }
+}
+
+@keyframes slide-down-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, -15px);
+        transform: translate(0, -15px);
+    }
+}
+
+//
+// Placement Left Animations
+//
+
+@-webkit-keyframes slide-left-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(15px, 0);
+        transform: translate(15px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide-left-enter {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(15px, 0);
+        transform: translate(15px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes slide-left-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(15px, 0);
+        transform: translate(15px, 0);
+    }
+}
+
+@keyframes slide-left-leave {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: translate(15px, 0);
+        transform: translate(15px, 0);
+    }
+}

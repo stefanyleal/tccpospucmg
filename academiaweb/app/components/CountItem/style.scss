@@ -1,0 +1,35 @@
+.ct_count_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 300px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: 0px 0px #CCC, 0px 0px 1em #CCC;
+  margin-bottom: 30px;
+
+  .count_titulo {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 5px 0px 5px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .count_descricao {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 5px;
+    font-size: 25px;
+    color: #777;
+    height: 60px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.5;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}

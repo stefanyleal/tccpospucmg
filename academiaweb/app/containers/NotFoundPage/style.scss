@@ -1,0 +1,166 @@
+.not-found-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  background-color: #FFF;
+  z-index: 999999;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    color: #12292E;
+  }
+
+  .ct_notfound {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 0px;
+
+    .not_found {
+      z-index: 10;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .notfound_logo {
+        width: 230px;
+        padding-left: 30px;
+        margin: 0 auto 0 auto;
+      }
+
+      .notfound_image {
+        width: 500px;
+        margin: 45px auto 45px auto;
+      }
+
+      .notfound_message {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3vw;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        text-align: center;
+        letter-spacing: 0.7px;
+        color: #2B575E;
+        margin-bottom: 30px;
+
+        .message_bold {
+          font-weight: bold;
+        }
+      }
+
+      .back_to_home {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: #12292E;
+        text-decoration: none;
+        transition: all 0.4s;
+
+        &:hover {
+          color: #2B575E;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .not-found-page {
+
+    .ct_notfound {
+
+      .not_found {
+
+        .notfound_message {
+          font-size: 1.5vw;
+        }
+
+        .back_to_home {
+          font-size: 1.3vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .not-found-page {
+
+    .ct_notfound {
+
+      .not_found {
+
+        .notfound_message {
+          font-size: 2vw;
+        }
+
+        .back_to_home {
+          font-size: 1.7vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .not-found-page {
+
+    .ct_notfound {
+
+      .not_found {
+
+        .notfound_message {
+          font-size: 2.7vw;
+        }
+
+        .back_to_home {
+          font-size: 2.3vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .not-found-page {
+
+    .ct_notfound {
+
+      .not_found {
+        width: 300px;
+
+        .notfound_logo {
+          width: 200px;
+        }
+
+        .notfound_image {
+          width: 200px;
+        }
+
+        .notfound_message {
+          font-size: 5.5vw;
+        }
+
+        .back_to_home {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.app_page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+    width: 100%;
+
+    .ct_table_title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5vw;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        color: #12292E;
+        margin-bottom: 100px;
+    }
+
+    .ct_counts {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 500px) {
+  .app_page {
+
+    .ct_table_title {
+        font-size: 6vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .ct_produtos {
+      flex-direction: row;
+    }
+  }
+}

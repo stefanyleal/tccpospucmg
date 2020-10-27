@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d [%level] [%t] [%logger{40}] - %msg%n%throwable" />
+		</Console>
+
+		<RollingFile name="RollingFile"
+			fileName="/logs/pucmg_tcc.log"
+			filePattern="/logs/$${date:yyyy-MM}/pucmg_tcc-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout
+				pattern="%d [%level] [%t] [%logger{40}] - %msg%n%throwable" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB" />
+			</Policies>
+		</RollingFile>
+
+		<Logentries>
+			<PatternLayout
+				pattern="%d [%level] [%t] [%logger{40}] - %msg%n%throwable" />
+			<name>le</name>
+			<token>LOGENTRIES_TOKEN</token>
+		</Logentries>
+	</Appenders>
+
+	<Loggers>
+		<Root level="INFO">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="RollingFile"/>
+			<AppenderRef ref="le"/>
+		</Root>
+	</Loggers>
+</Configuration>

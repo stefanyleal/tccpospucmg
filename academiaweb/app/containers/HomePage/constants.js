@@ -1,0 +1,21 @@
+/**
+ * Constantes utilizadas para identificar um evento da HomePage
+ *
+ * @author Stéfany Leal
+ */
+
+export const LOAD_COUNT_CLIENTE = 'home/LOAD_COUNT_CLIENTE';
+export const LOAD_COUNT_CLIENTE_SUCCESS = 'home/LOAD_COUNT_CLIENTE_SUCCESS';
+export const LOAD_COUNT_CLIENTE_ERROR = 'home/LOAD_COUNT_CLIENTE_ERROR';
+
+export const LOAD_COUNT_INSTRUTOR = 'home/LOAD_COUNT_INSTRUTOR';
+export const LOAD_COUNT_INSTRUTOR_SUCCESS = 'home/LOAD_COUNT_INSTRUTOR_SUCCESS';
+export const LOAD_COUNT_INSTRUTOR_ERROR = 'home/LOAD_COUNT_INSTRUTOR_ERROR';
+
+export const INSERT_CLIENTE = 'home/INSERT_CLIENTE';
+export const INSERT_CLIENTE_SUCCESS = 'home/INSERT_CLIENTE_SUCCESS';
+export const INSERT_CLIENTE_ERROR = 'home/INSERT_CLIENTE_ERROR';
+
+export const INSERT_INSTRUTOR = 'home/INSERT_INSTRUTOR';
+export const INSERT_INSTRUTOR_SUCCESS = 'home/INSERT_INSTRUTOR_SUCCESS';
+export const INSERT_INSTRUTOR_ERROR = 'home/INSERT_INSTRUTOR_ERROR';

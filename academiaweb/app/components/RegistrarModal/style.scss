@@ -1,0 +1,192 @@
+.ct_registrar_modal {
+  display: flex;
+
+  .registrar_botao {
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+  }
+}
+
+.registrar_modal {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 50px 10px rgba(0, 0, 0, 0.5);
+  padding: 5px 0px 0px 0px;
+  min-width: 527px;
+  max-height: 640px;
+
+  .styles_closeButton__20ID4 {
+    color: #838383;
+    height: 30px;
+    width: 30px;
+    top: 35px;
+    right: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .modal_divisor {
+    height: 1px;
+    border: solid 1px #e3e3e3;
+    margin: 0px;
+  }
+
+  .modal_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #12292E;
+    padding: 20px 20px 15px 20px;
+  }
+
+  .centered {
+    transform: translate(0, 30%);
+  }
+
+  .modal_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3c3c3c;
+    transition: all 0.4s;
+    min-height: 271px;
+
+    .ct_modal_input {
+      display: flex;
+      justify-content: space-around;
+      height: 40px;
+
+      [type="checkbox"], [type="radio"] {
+        height: 15px;
+        width: 15px;
+        margin-top: 12.5px;
+        margin-right: 10px;
+      }
+    }
+
+    .ct_input_date {
+      justify-content: start !important;
+
+      div {
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+
+      .input_text_icon_right button, input, select, textarea {
+        padding-right: 1vw;
+        outline: none;
+        border: 1px solid #000;
+        border-radius: 5px;
+      }
+
+      .input_date::-webkit-calendar-picker-indicator{
+        outline: none;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .modal_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 20px;
+
+    .cancel_button {
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      color: #737373;
+      outline: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .send_button {
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #F3563F;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #ffffff;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .send_button:hover {
+      background-color: #D23D40;
+      box-shadow: 0 5px 20px 0 rgba(243, 86, 63, 0.50);
+      cursor: pointer;
+    }
+
+    .disabled {
+      background-color: gray;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+
+  .ct_registrar_modal {
+    width: 100%;
+    margin: 0px auto 0px auto;
+
+    .registrar_botao {
+      width: 90%;
+    }
+  }
+
+  .registrar_modal {
+    min-width: 100%;
+    height: 577px !important;
+
+    .styles_closeButton__20ID4 {
+      height: 25px;
+      width: 25px;
+      top: 25px;
+      right: 15px;
+    }
+
+    .modal_title {
+      font-size: 7vw;
+      padding: 15px 15px 10px 15px;
+    }
+
+    .modal_container {
+      padding: 15px 15px;
+      font-size: 3.7vw;
+      min-height: 435px;
+    }
+
+    .modal_buttons {
+      justify-content: space-around;
+      padding: 15px 15px;
+      width: 100%;
+
+      .cancel_button {
+        font-size: 3.7vw;
+      }
+
+      .send_button {
+        font-size: 3.7vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.app_page {
+
+  .ct_table_title{
+    margin-bottom: 50px !important;
+  }
+
+  .ct_acoes {
+    display: flex;
+    justify-content: space-around;
+
+    .icon :hover {
+      cursor: pointer;
+    }
+  }
+
+  .ReactTable {
+    box-shadow: 0px 0px #CCC, 0px 0px 1em #CCC !important;
+  }
+
+  .ReactTable .rt-tbody .rt-td {
+    text-align: center !important;
+  }
+
+  .ReactTable .rt-thead .rt-th.-cursor-pointer, .ReactTable .rt-thead .rt-td.-cursor-pointer :focus {
+    outline: none !important;
+  }
+
+  .inadimplente {
+    width: 100%;
+    height: 100%;
+    background: red !important;
+    color: #fff;
+  }
+
+  .adimplente {
+    width: 100%;
+    height: 100%;
+    background: green !important;
+    color: #fff;
+  }
+}

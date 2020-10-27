@@ -1,0 +1,121 @@
+.ct_input {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: solid 1px #333834;
+}
+
+.ct_input:focus-within {
+  border: solid 1px #e8db01;
+}
+
+.input_error {
+  border: solid 1px #f24342;
+}
+
+.input_text_icon_right {
+  width: 100%;
+  height: 100%;
+  color: #2B575E;
+  transition: all 0.4s;
+  border-radius: 5px;
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #e8db01 inset;
+    -webkit-text-fill-color: #2B575E !important;
+    -webkit-transition-delay: 99999s;
+  }
+}
+
+.input_text_readonly  {
+  background: rgba(204, 204, 204, 0.3);
+  cursor: default;
+}
+
+.input_text_icon_right:focus {
+  outline: none;
+}
+
+.input_text_icon_right:focus + .ct_icon {
+  color: #e8db01  ;
+}
+
+.input_text_icon_right button, input, select, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9375vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  padding-left: 1vw;
+  padding-right: 2.5vw;
+}
+
+.ct_icon {
+  width: 2vw;
+  height: 30px;
+  margin: auto 0px auto -2.1vw;
+  text-align: right;
+  color: #333834;
+  outline: none;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+  }
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;;
+  margin: 0;
+}
+
+.input_text_icon_right::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #2B575E;
+}
+.input_text_icon_right:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #2B575E;
+  opacity:  1;
+}
+.input_text_icon_right::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #2B575E;
+  opacity:  1;
+}
+.input_text_icon_right:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #2B575E;
+}
+.input_text_icon_right::-ms-input-placeholder { /* Microsoft Edge */
+  color: #2B575E;
+}
+.input_text_icon_right::placeholder { /* Most modern browsers support this now. */
+  color: #2B575E;
+}
+
+@media all and (max-width: 500px) {
+  .input_text_icon_right button, input, select, textarea {
+    font-size: 5vw;
+  }
+
+  .input_text_icon_right button, input, select, textarea {
+    padding-left: 2vw;
+    padding-right: 6vw;
+  }
+
+  .ct_icon {
+    width: 5vw;
+    height: 25px;
+    margin: auto 0px auto -6vw;
+    text-align: right;
+    color: #e8db01;
+
+    svg {
+      width: 100%;
+    }
+  }
+}
